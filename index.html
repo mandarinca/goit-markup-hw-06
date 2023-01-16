@@ -364,10 +364,10 @@
           </div>
         </section>
     </main>
+
     <footer class="the-end">
 
-      <div class="container test" >
-       
+      <div class="container test">
       <div class="first">        
         <a href="./index.html" class="logo-down"
         >web<span class="studio-down">studio</span></a
@@ -411,7 +411,28 @@
           </li>
         </ul>
       </div>
-      </div>
+
+        <div class="subscribe-container">
+          <p class="subscribe-title">Subscribe</p>
+          <div class="subscribe-wrapper">
+            <label for="email_for_subscribe" class="subscribe-form-field"></label>
+            <input type="email" 
+            id="email_for_subscribe"
+          class="subscribe-form-input" 
+          name="subscribe-email_name"
+          placeholder="E-mail"
+          required>
+
+          <div class="subscribe-form-btn-wrapper">
+
+            <button type="submit" class="subscribe-btn">Subscribe
+              <svg class="fly-icon" width="24" height="20">
+                <use href="./images/icons.svg#icon-send"></use>
+            </svg>
+          </button>
+        </div>
+    </div>
+</div>
     </footer>
     <div class="backdrop is-hidden" data-modal>
       <div class="modal">
@@ -425,10 +446,11 @@
         
         <form class="contact-form">
           
-          <label for="" class="contact-form-field">
+          <label for="user_name" class="contact-form-field">
             <span class="contact-form-desk-input">Name</span>
             <div class="contact-form-wrapper">
               <input type="text" 
+              id="user_name"
               class="contact-form-input" 
               name="user_name" 
               required pattern="[a-zA-Zа-яА-я]+$"
@@ -439,11 +461,12 @@
             </div>
           </label>
 
-          <label for="" class="contact-form-field">
+          <label for="user_phone" class="contact-form-field">
             <span class="contact-form-desk-input">Phone</span>
             <div class="contact-form-wrapper">
               
-            <input type="email" 
+            <input type="phone" 
+            id="user_phone"
             class="contact-form-input" 
             name="user_phone" 
             required>
@@ -454,11 +477,12 @@
          
           </label>
 
-          <label for="" class="contact-form-field">
+          <label for="user_email" class="contact-form-field">
             <span class="contact-form-desk-input">Email</span>
             <div class="contact-form-wrapper">
               
-            <input type="tel" 
+            <input type="email"
+            id="user_email"
             class="contact-form-input" 
             name="user_email" 
             required>
@@ -469,7 +493,7 @@
           </div>
           </label>
   
- 
+          <span class="contact-form-desk-input">Comment</span>
     <textarea 
     name="user_comment" 
     id="" 
@@ -480,7 +504,7 @@
     <input id="user-policy" type="checkbox" class="contact-checkbox visually-hidden">
     <label for="user-policy" class="contact-checkbox-text-agree">
       I accept the terms and conditions of the &nbsp;
-      <a href=""> Privacy Policy</a></label>
+      <a href="">Privacy Policy</a></label>
   
   <div class="contact-form-btn-wrapper">
     <button type="submit" class="contact-form-btn">Send</button>
