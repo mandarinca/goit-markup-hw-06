@@ -740,7 +740,7 @@ margin-bottom: 16px;
 
 
 
-.subscribe-form-field:placeholder {
+.subscribe-form-field::placeholder {
   color: rgba(117, 117, 117, 0.5);
   font-weight: 400;
 font-size: 12px;
@@ -896,7 +896,7 @@ margin-bottom: 16px;
 
 }
 
-.contact-form-comment:placeholder {
+.contact-form-comment::placeholder {
   color: rgba(117, 117, 117, 0.5);
   font-weight: 400;
 font-size: 12px;
@@ -908,7 +908,10 @@ line-height: 1.3;
 .contact-form-comment:focus {
   outline: none;
   border-color: #4D5AE5;
+
 }
+
+/*.contact-checkbox {}*/
 
 .contact-checkbox-text-agree {
   display: flex;
@@ -920,6 +923,7 @@ line-height: 1.3;
 letter-spacing: 0.04em;
 color: #757575;
  margin-bottom: 24px;
+
 }
 
 
@@ -933,14 +937,12 @@ color: #757575;
   content: '';
   margin-right: 8px;
  
-  
 }
 
-
-
 .contact-checkbox:checked:focus + .contact-checkbox-text-agree::before {
-  background-image: url(../images/icon-Property-1click-1.svg);
+  background-image: url(../images/icon-vector.svg);
   border-color: #404BBF;
+  background-color: #404BBF;
   background-size: contain;
 
 }
